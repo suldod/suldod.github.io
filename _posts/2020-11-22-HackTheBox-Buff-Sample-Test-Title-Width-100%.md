@@ -1,7 +1,6 @@
 ---
 layout: single
 title: "Hack The Box Write-up #6 : Buff, Sample Title Width Test, Classes: Wide."
-excerpt: "Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox."
 date: 2020-11-22
 categories:
   - hackthebox
@@ -14,6 +13,7 @@ tags:
 author_profile: false
 classes: wide
 ---
+Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.
 
 ![card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/buff.png)
 
