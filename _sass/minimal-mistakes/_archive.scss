@@ -5,7 +5,7 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
-	
+    
   /* Adjust the width and padding to utilize both sides of the screen */
   width: 100%; /* Make the archive take the full width */
 
@@ -13,25 +13,15 @@
   margin-left: auto;
   margin-right: auto;
 
-  /* Adjust the padding to ensure proper spacing */
-  padding-left: 80%; /* Adjust as needed */
-  padding-right: 80%; /* Adjust as needed */
-
  /* Adjust the float property */
   float: none; /* Remove float to ensure full width */
-	
+    
   @include breakpoint($large) {
     float: none;
-    width: calc(80% - #{$right-sidebar-width-narrow});
-    padding-left: $right-sidebar-width-narrow;
-    padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     float: none;
-    width: calc(80% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
-    padding-left: $right-sidebar-width;
   }
 }
 
@@ -474,7 +464,7 @@
 /* Place inside a single layout */
 
 .layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
+    .feature__wrapper {
+        display: inline-block;
+    }
 }
