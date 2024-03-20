@@ -5,16 +5,27 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
+	
+  /* Adjust the width and padding to utilize both sides of the screen */
+  width: 100%; /* Make the archive take the full width */
+  padding-left: $right-sidebar-width; /* Add padding to the left side */
+  padding-right: $right-sidebar-width; /* Add padding to the right side */
 
+ /* Adjust the float property */
+  float: none; /* Remove float to ensure full width */
+	
   @include breakpoint($large) {
-    float: right;
+    float: none;
     width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-left: $right-sidebar-width-narrow;
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
+    float: none;
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
+    padding-left: $right-sidebar-width;
   }
 }
 
