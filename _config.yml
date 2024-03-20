@@ -134,7 +134,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fa-brands fa-x-twitter"
-      url: "x.com/suljotgjokaa"
+      url: "https://twitter.com/suljotgjokaa"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
