@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Hack The Box Write-up #6 : Buff"
-excerpt: "Writeup for Buff, a windows machine provided by HacktheBox."
+excerpt: "Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox."
 date: 2020-11-22
 categories:
   - hackthebox
