@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Hack The Box Write-up #6 : Buff, Sample Title Width Test, Classes: Wide."
+excerpt: "Delivery is a quick and fun easy box where we have to create a MatterMost account and validate it by using automatic email accounts created by the OsTicket application. The admins on this platform have very poor security practices and put plaintext credentials in MatterMost. Once we get the initial shell with the creds from MatterMost we’ll poke around MySQL and get a root password bcrypt hash. Using a hint left in the MatterMost channel about the password being a variation of PleaseSubscribe!, we’ll use hashcat combined with rules to crack the password then get the root shell."
 date: 2020-11-22
 categories:
   - hackthebox
@@ -13,7 +14,7 @@ tags:
 author_profile: false
 classes: wide
 ---
-Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.Writeup for Buff, a windows machine provided by HacktheBox.
+Delivery is a quick and fun easy box where we have to create a MatterMost account and validate it by using automatic email accounts created by the OsTicket application. The admins on this platform have very poor security practices and put plaintext credentials in MatterMost. Once we get the initial shell with the creds from MatterMost we’ll poke around MySQL and get a root password bcrypt hash. Using a hint left in the MatterMost channel about the password being a variation of PleaseSubscribe!, we’ll use hashcat combined with rules to crack the password then get the root shell.
 
 ![card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/buff.png)
 
