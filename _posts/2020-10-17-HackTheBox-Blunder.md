@@ -4,8 +4,9 @@ classes: wide
 title: "Hack The Box Write-up #4 : Blunder"
 excerpt: "Writeup for Blunder, a machine provided by HacktheBox."
 date: 2020-10-17
-teaser: /assets/images/blunder-writeup/blunder.png
-teaser_home_page: true
+header:
+  teaser: "https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/blunder-writeup/blunder.png"
+  teaser_home_page: true
   
 categories:
   - hackthebox
