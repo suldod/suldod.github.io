@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title: "Hack The Box Write-up #4 : Blunder"
 excerpt: "Writeup for Blunder, a machine provided by HacktheBox."
 date: 2020-10-17
