@@ -6,8 +6,6 @@ excerpt: "Writeup for Blunder, a machine provided by HacktheBox."
 date: 2020-10-17
 header:
   teaser: "https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/blunder-writeup/blunder.png"
-  teaser_home_page: true
-  
 categories:
   - hackthebox
 tags:  
