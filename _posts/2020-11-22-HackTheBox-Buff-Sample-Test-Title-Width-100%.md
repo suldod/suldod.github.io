@@ -15,7 +15,7 @@ author_profile: false
 classes: wide
 ---
 
-<div align="center">Delivery is a quick and fun easy box where we have to create a MatterMost account and validate it by using automatic email accounts created by the OsTicket application. The admins on this platform have very poor security practices and put plaintext credentials in MatterMost. Once we get the initial shell with the creds from MatterMost we’ll poke around MySQL and get a root password bcrypt hash. Using a hint left in the MatterMost channel about the password being a variation of PleaseSubscribe!, we’ll use hashcat combined with rules to crack the password then get the root shell.
+Delivery is a quick and fun easy box where we have to create a MatterMost account and validate it by using automatic email accounts created by the OsTicket application. The admins on this platform have very poor security practices and put plaintext credentials in MatterMost. Once we get the initial shell with the creds from MatterMost we’ll poke around MySQL and get a root password bcrypt hash. Using a hint left in the MatterMost channel about the password being a variation of PleaseSubscribe!, we’ll use hashcat combined with rules to crack the password then get the root shell.
 
 ![card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/buff.png)
 
@@ -264,8 +264,9 @@ except Exception as e:
 Im going to save the modified exploit and run it using : 
 ``python cloudme_exploit.py``. 
 
-Before executing remember that we also need to set up a listening port (the same we used while generating a shellcode) , in this case it would be **9002**</div>
+Before executing remember that we also need to set up a listening port (the same we used while generating a shellcode) , in this case it would be **9002**
 
 ![admin](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/admin.png)
 
 After executing I recieved a shell as **Administrator** which was pretty much the last step for this box.
+{: style="text-align: center;"}
