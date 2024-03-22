@@ -43,7 +43,6 @@ body {
     max-width: $max-width; /* Set maximum width */
     padding: 0; /* Remove padding */
   }
-}
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
