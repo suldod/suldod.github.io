@@ -3,17 +3,11 @@ layout: single
 title: "Hack The Box Write-up #3 : Sauna"
 excerpt: "Writeup for Sauna , HacktheBox"
 date: 2020-07-24
-toc: true
-toc_sticky: true
 header:
   tagline: "Writeup for Sauna , HacktheBox"
   overlay_image: /assets/images/background.jpg
   overlay_filter: 0.5
-  actions:
-    - label: "More Info"
-      url: "https://www.hackthebox.eu/home/machines/profile/229"
   teaser: /assets/images/sauna-walkthrough/sauna.png
-  teaser_home_page: true
   
 categories:
   - hackthebox
