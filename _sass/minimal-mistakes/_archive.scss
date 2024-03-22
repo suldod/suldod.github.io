@@ -125,36 +125,11 @@
    ========================================================================== */
 
 .list__item {
-  .page__meta {
-    margin: 0 0 4px;
-    font-size: 0.6em;
-  }
-}
-
-/*
-   Grid view
-   ========================================================================== */
-
-.archive {
-  .grid__wrapper {
-    /* extend grid elements to the right */
-
-    @include breakpoint($large) {
-      margin-right: -1 * $right-sidebar-width-narrow;
-    }
-
-    @include breakpoint($x-large) {
-      margin-right: -1 * $right-sidebar-width;
-    }
-  }
-}
-
-.grid__item {
   margin-bottom: 2em;
 
   @include breakpoint($small) {
     float: left;
-    width: span(5 of 10);
+    width: span(8 of 12); // Adjusted width to span 8 out of 12 columns
 
     &:nth-child(2n + 1) {
       clear: both;
@@ -163,14 +138,14 @@
 
     &:nth-child(2n + 2) {
       clear: none;
-      margin-left: gutter(of 10);
+      margin-left: gutter(of 12);
     }
   }
 
   @include breakpoint($medium) {
     margin-left: 0; /* override margin*/
     margin-right: 0; /* override margin*/
-    width: span(3 of 12);
+    width: span(6 of 12); // Adjusted width to span 6 out of 12 columns
 
     &:nth-child(2n + 1) {
       clear: none;
