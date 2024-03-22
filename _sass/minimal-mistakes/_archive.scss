@@ -5,12 +5,10 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
+  display: flex;
+  justify-content: center; /* Centering the content horizontally */
 
-  margin-left: 7.5em;
-  margin-right: auto;
-	
   @include breakpoint($large) {
-    float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
