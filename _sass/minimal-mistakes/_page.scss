@@ -4,7 +4,8 @@
 
 #main {
   @include clearfix;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
@@ -37,10 +38,12 @@ body {
 .page {
   @include breakpoint($large) {
     float: right;
+    width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
 
@@ -529,9 +532,11 @@ body {
 
   @include breakpoint($large) {
     float: right;
+    width: calc(100% - #{$right-sidebar-width-narrow});
   }
 
   @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
   }
 
   a {
