@@ -3,8 +3,6 @@ layout: single
 title: "Hack The Box Write-up #5 : Tabby"
 excerpt: "Writeup for Tabby, a machine provided by HacktheBox."
 date: 2020-11-08
-toc: true
-toc_sticky: true
 header:
   tagline: "Writeup for Tabby , a machine provided by HacktheBox."
   overlay_image: /assets/images/background.jpg
