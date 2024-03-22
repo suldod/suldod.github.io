@@ -126,6 +126,8 @@
 
 .list__item {
   margin-bottom: 2em;
+  margin-left: auto; // Center the content by setting left margin to auto
+  margin-right: auto; // Center the content by setting right margin to auto
 
   @include breakpoint($small) {
     float: left;
@@ -143,8 +145,8 @@
   }
 
   @include breakpoint($medium) {
-    margin-left: 0; /* override margin*/
-    margin-right: 0; /* override margin*/
+    margin-left: auto; /* override margin*/
+    margin-right: auto; /* override margin*/
     width: span(6 of 12); // Adjusted width to span 6 out of 12 columns
 
     &:nth-child(2n + 1) {
