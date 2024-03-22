@@ -3,11 +3,8 @@ layout: single
 title: "Hack The Box Write-up #2 : ServMon"
 excerpt: "My walkthrough of ServMon Machine from HackTheBox"
 date: 2020-06-20
-toc: true
-toc_sticky: true
 header:
   teaser: /assets/images/servmon-walkthrough/servmon.PNG
-  teaser_home_page: true
 categories:
   - hackthebox
   - infosec
