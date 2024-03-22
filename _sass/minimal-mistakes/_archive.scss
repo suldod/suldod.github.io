@@ -1,25 +1,37 @@
 /* ==========================================================================
+/* ==========================================================================
    ARCHIVE
    ========================================================================== */
 
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
-  text-align: center; // Add this line to center the content
 
   @include breakpoint($large) {
-    float: none; // Remove float for larger screens
-    width: 100%; // Set width to 100% for larger screens
-    padding-right: 0;
+    margin-left: auto; /* Centering the archive */
+    margin-right: auto; /* Centering the archive */
+    float: none; /* Remove float to allow centering */
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    padding-right: 0;
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
   }
 }
 
 .archive__item {
   position: relative;
+
+  a {
+    position: relative;
+    z-index: 10;
+  }
+
+  a[rel="permalink"] {
+    position: static;
+  }
 }
 
 .archive__subtitle {
@@ -121,7 +133,6 @@
     font-size: 0.6em;
   }
 }
-
 /*
    Grid view
    ========================================================================== */
