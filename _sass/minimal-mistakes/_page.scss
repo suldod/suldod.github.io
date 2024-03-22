@@ -4,7 +4,7 @@
 
 #main {
   @include clearfix;
-  margin-left: 7.5em;
+  margin-left: auto;
   margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
@@ -37,10 +37,13 @@ body {
 
 .page {
   @include breakpoint($large) {
-    float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    float: none; /* Remove floating for responsiveness */
+    margin: 0 auto; /* Center the content */
+    width: 100%; /* Occupy the full width */
+    max-width: $max-width; /* Set maximum width */
+    padding: 0; /* Remove padding */
   }
+}
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
