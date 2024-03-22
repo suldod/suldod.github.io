@@ -5,31 +5,19 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
-  
-  /* Adjust the width and padding to utilize both sides of the screen */
-  width: 100%; /* Make the archive take the full width */
-  padding-left: 5%; /* Adjust as needed */
-  padding-right: 5%; /* Adjust as needed */
-  
-  /* Adjust the float property */
-  float: none; /* Remove float to ensure full width */
-  
+
   @include breakpoint($large) {
-    float: none;
-    width: calc(90% - #{$right-sidebar-width-narrow}); /* Adjust as needed */
-    padding-left: 5%; /* Adjust as needed */
-    padding-right: calc(5% + #{$right-sidebar-width-narrow}); /* Adjust as needed */
+    float: right;
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    float: none;
-    width: calc(90% - #{$right-sidebar-width}); /* Adjust as needed */
-    padding-left: 5%; /* Adjust as needed */
-    padding-right: calc(5% + #{$right-sidebar-width}); /* Adjust as needed */
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
   }
 }
 
-/* Other styles remain unchanged */
 .archive__item {
   position: relative;
 
@@ -140,6 +128,25 @@
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.6em;
+  }
+
+  @include breakpoint($small) {
+    float: left;
+    width: calc(100% / 3); // Extend width to one-third of the container
+    /* You can adjust the width percentage as needed */
+
+    &:nth-child(3n + 1) {
+      clear: both;
+    }
+  }
+
+  @include breakpoint($medium) {
+    width: calc(100% / 2); // Extend width to one-half of the container
+    /* You can adjust the width percentage as needed */
+
+    &:nth-child(2n + 1) {
+      clear: none;
+    }
   }
 }
 
@@ -292,184 +299,4 @@
   }
 
   .archive__item-body {
-    padding-left: gutter(1 of 12);
-    padding-right: gutter(1 of 12);
-  }
-
-  a.btn::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  &--left {
-    position: relative;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    clear: both;
-    font-size: 1.125em;
-
-    .archive__item {
-      float: left;
-    }
-
-    .archive__item-teaser {
-      margin-bottom: 2em;
-    }
-
-    a.btn::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-    }
-
-    @include breakpoint($small) {
-      .archive__item-teaser {
-        float: left;
-        width: span(5 of 12);
-      }
-
-      .archive__item-body {
-        float: right;
-        padding-left: gutter(0.5 of 12);
-        padding-right: gutter(1 of 12);
-        width: span(7 of 12);
-      }
-    }
-  }
-
-  &--right {
-    position: relative;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    clear: both;
-    font-size: 1.125em;
-
-    .archive__item {
-      float: left;
-    }
-
-    .archive__item-teaser {
-      margin-bottom: 2em;
-    }
-
-    a.btn::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-    }
-
-    @include breakpoint($small) {
-      text-align: right;
-
-      .archive__item-teaser {
-        float: right;
-        width: span(5 of 12);
-      }
-
-      .archive__item-body {
-        float: left;
-        width: span(7 of 12);
-        padding-left: gutter(0.5 of 12);
-        padding-right: gutter(1 of 12);
-      }
-    }
-  }
-
-  &--center {
-    position: relative;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    clear: both;
-    font-size: 1.125em;
-
-    .archive__item {
-      float: left;
-      width: 100%;
-    }
-
-    .archive__item-teaser {
-      margin-bottom: 2em;
-    }
-
-    a.btn::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-    }
-
-    @include breakpoint($small) {
-      text-align: center;
-
-      .archive__item-teaser {
-        margin: 0 auto;
-        width: span(5 of 12);
-      }
-
-      .archive__item-body {
-        margin: 0 auto;
-        width: span(7 of 12);
-      }
-    }
-  }
-}
-
-/* Place inside an archive layout */
-
-.archive {
-  .feature__wrapper {
-    .archive__item-title {
-      margin-top: 0.25em;
-      font-size: 1em;
-    }
-  }
-
-  .feature__item,
-  .feature__item--left,
-  .feature__item--center,
-  .feature__item--right {
-    font-size: 1em;
-  }
-}
-
-/*
-   Wide Pages
-   ========================================================================== */
-
-  .wide {
-  .archive {
-    @include breakpoint($large) {
-      padding-right: 0;
-    }
-
-    @include breakpoint($x-large) {
-      padding-right: 0;
-    }
-  }
-}
-
-/* Place inside a single layout */
-
-.layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
-}
+    padding-left: gutter(1 of 
