@@ -5,36 +5,27 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
-	
-  /* Adjust the width and padding to utilize both sides of the screen */
   width: 100%; /* Make the archive take the full width */
-
-    /* Center the posts horizontally */
-  margin-left: auto;
+  margin-left: auto; /* Center the archive horizontally */
   margin-right: auto;
-
-  /* Adjust the padding to ensure proper spacing */
-  padding-left: 5%; /* Adjust as needed */
-  padding-right: 80%; /* Adjust as needed */
-
- /* Adjust the float property */
   float: none; /* Remove float to ensure full width */
-	
+  padding-left: 5%; /* Adjust padding as needed */
+  padding-right: 5%; /* Adjust padding as needed */
+
   @include breakpoint($large) {
     float: none;
-    width: calc(80% - #{$right-sidebar-width-narrow});
+    width: calc(100% - #{$right-sidebar-width-narrow});
     padding-left: $right-sidebar-width-narrow;
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     float: none;
-    width: calc(80% - #{$right-sidebar-width});
+    width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
     padding-left: $right-sidebar-width;
   }
 }
-
 .archive__item {
   position: relative;
 
