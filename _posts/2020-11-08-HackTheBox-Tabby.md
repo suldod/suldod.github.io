@@ -7,11 +7,7 @@ header:
   tagline: "Writeup for Tabby , a machine provided by HacktheBox."
   overlay_image: /assets/images/background.jpg
   overlay_filter: 0.5
-  actions:
-    - label: "Learn More"
-      url: "https://www.hackthebox.eu/home/machines/profile/259"
   teaser: /assets/images/tabby-writeup/tabby.png
-  teaser_home_page: true
   
 categories:
   - hackthebox
