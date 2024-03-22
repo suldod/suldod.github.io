@@ -125,13 +125,36 @@
    ========================================================================== */
 
 .list__item {
+  .page__meta {
+    margin: 0 0 4px;
+    font-size: 0.6em;
+  }
+}
+
+/*
+   Grid view
+   ========================================================================== */
+
+.archive {
+  .grid__wrapper {
+    /* extend grid elements to the right */
+
+    @include breakpoint($large) {
+      margin-right: -1 * $right-sidebar-width-narrow;
+    }
+
+    @include breakpoint($x-large) {
+      margin-right: -1 * $right-sidebar-width;
+    }
+  }
+}
+
+.grid__item {
   margin-bottom: 2em;
-  margin-left: auto; // Center the content by setting left margin to auto
-  margin-right: auto; // Center the content by setting right margin to auto
 
   @include breakpoint($small) {
     float: left;
-    width: span(8 of 12); // Adjusted width to span 8 out of 12 columns
+    width: span(5 of 10);
 
     &:nth-child(2n + 1) {
       clear: both;
@@ -140,14 +163,14 @@
 
     &:nth-child(2n + 2) {
       clear: none;
-      margin-left: gutter(of 12);
+      margin-left: gutter(of 10);
     }
   }
 
   @include breakpoint($medium) {
-    margin-left: auto; /* override margin*/
-    margin-right: auto; /* override margin*/
-    width: span(6 of 12); // Adjusted width to span 6 out of 12 columns
+    margin-left: 0; /* override margin*/
+    margin-right: 0; /* override margin*/
+    width: span(3 of 12);
 
     &:nth-child(2n + 1) {
       clear: none;
