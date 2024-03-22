@@ -129,25 +129,6 @@
     margin: 0 0 4px;
     font-size: 0.6em;
   }
-
-  @include breakpoint($small) {
-    float: left;
-    width: calc(100% / 3); // Extend width to one-third of the container
-    /* You can adjust the width percentage as needed */
-
-    &:nth-child(3n + 1) {
-      clear: both;
-    }
-  }
-
-  @include breakpoint($medium) {
-    width: calc(100% / 2); // Extend width to one-half of the container
-    /* You can adjust the width percentage as needed */
-
-    &:nth-child(2n + 1) {
-      clear: none;
-    }
-  }
 }
 
 /*
@@ -476,7 +457,7 @@
 /* Place inside a single layout */
 
 .layout--single {
-  .feature__wrapper {
-    display: inline-block;
-  }
+	.feature__wrapper {
+		display: inline-block;
+	}
 }
