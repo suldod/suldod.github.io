@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title: "Hack The Box Write-up #5 : Tabby"
 excerpt: "Writeup for Tabby, a machine provided by HacktheBox."
 date: 2020-11-08
