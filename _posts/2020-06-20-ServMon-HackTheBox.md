@@ -1,6 +1,7 @@
 ---
 layout: single
-title: "Hack The Box Write-up #2 : ServMon"
+classes: wide
+title: "HackTheBox Machine Write-up #2 : ServMon"
 excerpt: "My walkthrough of ServMon Machine from HackTheBox"
 date: 2020-06-20
 header:
