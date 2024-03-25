@@ -1,16 +1,11 @@
 ---
 layout: single
 classes: wide
-title: "HackTheBox Machine Write-up #1, Sauna"
+title: "HackTheBox Machine Write-up #1 : Sauna"
 excerpt: "Sauna was quite a fun and interesting machine to do provided by HackTheBox aiming to teach you some basic concepts about Red Teaming and Active Directory Exploitation.
 User comes with a pretty real life vector attack where some workers are presented on a Bank webpage where we had to guess their usernames based on the Full Names provided on the webpage. Root represents an usual mistake while setting user privilege where an user in the machine has DCSync rights over the domain."
 date: 2020-07-24
-header:
-  tagline: "Sauna, HackTheBox Machine Writeup" 
-  overlay_image: /assets/
-  overlay_filter: 0.5
 ---
-
 ![Card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/sauna-walkthrough/sauna.png)
 {: style="text-align: center;"}
 
