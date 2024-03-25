@@ -1,23 +1,3 @@
----
-layout: single
-classes: wide
-title: "Hack The Box Write-up #5 : Tabby"
-excerpt: "Writeup for Tabby, a machine provided by HacktheBox."
-date: 2020-11-08
-header:
-  tagline: "Writeup for Tabby , a machine provided by HacktheBox."
-  overlay_image: /assets/images/background.jpg
-  overlay_filter: 0.5
-  teaser: /assets/images/tabby-writeup/tabby.png
-  
-categories:
-  - hackthebox
-tags:  
-  - linux
-  - cve
-  - tomcat
----
-
 ![card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/tabby-writeup/tabby.png)
 
 ## Summary
