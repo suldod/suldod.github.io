@@ -1,19 +1,3 @@
----
-layout: single
-title: "Hack The Box Write-up #1 : Traverxec"
-excerpt: "My walkthrough of Traverxec Machine from HackTheBox"
-date: 2020-04-11
-header:
-  teaser: /assets/images/traverxec-walkthrough/traverxec.png
-categories:
-  - hackthebox
-  - infosec
-tags:
-  - nostromo  
-  - journalctl
-  - gtfobins
----
-
 ![Card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/traverxec-walkthrough/traverxec.png)
 
 ## Enumeration
