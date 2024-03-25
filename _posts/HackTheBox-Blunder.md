@@ -1,19 +1,3 @@
----
-layout: single
-classes: wide
-title: "Hack The Box Write-up #4 : Blunder"
-excerpt: "Writeup for Blunder, a machine provided by HacktheBox."
-date: 2020-10-17
-header:
-  teaser: "https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/blunder-writeup/blunder.png"
-categories:
-  - hackthebox
-tags:  
-  - linux
-  - cve
-  - bludit-cms
----
-
 ![Card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/blunder-writeup/blunder.png)
 
 ## Summary
