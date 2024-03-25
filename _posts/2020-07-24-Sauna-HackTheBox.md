@@ -12,6 +12,7 @@ header:
 ---
 
 ![Card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/sauna-walkthrough/sauna.png)
+{: style="text-align: center;"}
 
 ## Summary
 
@@ -131,6 +132,7 @@ Succesfully logged in as expected and with that I am free to grab the user hash 
 After getting one foot inside the machine I would like to run **WinPeas** (Enumeration Tool for Windows Privilege Escalation) to check for possible paths since I wasnt able to figure out a way manually :
 
 ![winpeas](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/sauna-walkthrough/winpeas.png)
+{: style="text-align: center;"}
 
 After running , some credentials popped for an AD user : ``svc_loanmgr:Moneymakestheworldgoround!``
 
