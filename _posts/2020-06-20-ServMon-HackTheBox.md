@@ -5,8 +5,8 @@ title: "HackTheBox Machine Write-up #2 : ServMon"
 excerpt: "My walkthrough of ServMon Machine from HackTheBox"
 date: 2020-06-20
 header:
-  teaser: /assets/images/servmon-walkthrough/servmon.PNG
   tagline: "HackTheBox Machine Write-up #2 : ServMonp" 
+  teaser: /assets/images/servmon-walkthrough/servmon.PNG
   overlay_image: /assets/
   overlay_filter: 0.5
 ---
