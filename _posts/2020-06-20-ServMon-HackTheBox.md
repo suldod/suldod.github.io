@@ -6,6 +6,9 @@ excerpt: "My walkthrough of ServMon Machine from HackTheBox"
 date: 2020-06-20
 header:
   teaser: /assets/images/servmon-walkthrough/servmon.PNG
+  tagline: "HackTheBox Machine Write-up #2 : ServMonp" 
+  overlay_image: /assets/
+  overlay_filter: 0.5
 ---
 
 ![Card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/servmon-walkthrough/servmon.PNG)
