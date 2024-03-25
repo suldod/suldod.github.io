@@ -6,12 +6,6 @@ excerpt: "This short article covers an explaination of the Out-Of-Band XML Exter
 date: 2020-06-07
 header:
   teaser: /assets/images/xxe-injection/xxe.png
-categories:
-  - bug-hunting
-tags:
-  - web-app
-  - xxe
-  - file-read
 ---
 
 In this short article I'm going to make a short explaination of the XXE injection, how it works and how it can be used into any vulnerable app to retrieve files from the remote server using a local DTD file.
@@ -126,14 +120,6 @@ bin:x:2:2:bin:/bin:/usr/sbin/nologin
 gbyolo:x:1000:1000::/home/gbyolo:/bin/bash
 ```
 
-aand... as we see we were able to read ``/etc/passwd`` from the remote machine which means our attack was succesful and this way we can read any file in the remote machine like : ssh keys or possible config files to help us identify and gather more information of the machine for further exploitation.
-
-I learned a new kind of attack while completing this machine and I hope this article helps you somehow learn something new.  
-Any feedback or suggestion is appreciated!  
-
-
-
-
-Do you like my work?  
+and as we see we were able to read ``/etc/passwd`` from the remote machine which means our attack was succesful and this way we can read any file in the remote machine like : ssh keys or possible config files to help us identify and gather more information of the machine for further exploitation.
 
 
