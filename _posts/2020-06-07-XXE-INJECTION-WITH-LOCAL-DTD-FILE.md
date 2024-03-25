@@ -40,6 +40,7 @@ Later I could use [PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsA
 First I went to [Google Docs](https://docs.google.com/) to create a ``.docx`` and download it to my machine to make further edits to it and inject some XML code.
 
 ![docs](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/xxe-injection/xxe1.PNG)
+{: style="text-align: center;"}
 
 After it is downloaded I can unzip the document and make edits to the xml file:
 
