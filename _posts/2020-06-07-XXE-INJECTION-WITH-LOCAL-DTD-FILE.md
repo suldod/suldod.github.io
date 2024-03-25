@@ -4,11 +4,6 @@ classes: wide
 title: "XXE injection with local DTD file and PHP filter."
 excerpt: "This short article covers an explaination of the Out-Of-Band XML External Entity injections, how it works and how it can be used into any vulnerable app to retrieve files from the remote server using a local DTD file."
 date: 2020-06-07
-header:
-  tagline: "Constructing an Out-Of-Band XML External Entity injection payload"
-  teaser: /assets/images/xxe-injection/xxe.png 
-  overlay_image: /assets/
-  overlay_filter: 0.5
 ---
 
 In this short article I'm going to make a short explaination of the XXE injection, how it works and how it can be used into any vulnerable app to retrieve files from the remote server using a local DTD file.
