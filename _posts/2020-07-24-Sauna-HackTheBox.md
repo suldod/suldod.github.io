@@ -1,14 +1,12 @@
 ---
 layout: single
-title: "Hack The Box Write-up #3 : Sauna"
-excerpt: "Writeup for Sauna , HacktheBox"
+classes: wide
+title: "Sauna, HackTheBox Machine Writeup"
+excerpt: "Sauna was quite a fun and interesting machine to do provided by HackTheBox aiming to teach you some basic concepts about Red Teaming and Active Directory Exploitation.
+User comes with a pretty real life vector attack where some workers are presented on a Bank webpage where we had to guess their usernames based on the Full Names provided on the webpage. Root represents an usual mistake while setting user privilege where an user in the machine has DCSync rights over the domain."
 date: 2020-07-24
 header:
-  tagline: "Writeup for Sauna , HacktheBox"
-  overlay_image: /assets/images/background.jpg
-  overlay_filter: 0.5
-  teaser: /assets/images/sauna-walkthrough/sauna.png
-  
+  tagline: "Sauna, HackTheBox Machine Writeup"  
 categories:
   - hackthebox
   - infosec
