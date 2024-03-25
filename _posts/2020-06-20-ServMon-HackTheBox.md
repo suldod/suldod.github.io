@@ -9,6 +9,7 @@ header:
 ---
 
 ![Card](https://raw.githubusercontent.com/pi0x73/pi0x73.github.io/master/assets/images/servmon-walkthrough/servmon.PNG)
+{: style="text-align: center;"}
 
 ## Enumeration
 
