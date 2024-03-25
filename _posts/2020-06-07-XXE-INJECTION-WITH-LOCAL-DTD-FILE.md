@@ -6,6 +6,9 @@ excerpt: "This short article covers an explaination of the Out-Of-Band XML Exter
 date: 2020-06-07
 header:
   teaser: /assets/images/xxe-injection/xxe.png
+  tagline: "Constructing an Out-Of-Band XML External Entity injection payload" 
+  overlay_image: /assets/
+  overlay_filter: 0.5
 ---
 
 In this short article I'm going to make a short explaination of the XXE injection, how it works and how it can be used into any vulnerable app to retrieve files from the remote server using a local DTD file.
